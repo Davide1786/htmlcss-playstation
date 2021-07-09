@@ -6,6 +6,12 @@
 /* -------------------------------------------------- */
 /* Inizio Common */
 
+.clearfix {
+   content: "";
+   display: table;
+   clear: both;
+}
+
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Header */
@@ -28,9 +34,88 @@
 .ms-btn-sm {
    border-radius: 20px;
 }
+
+.lente {
+   height: 40px;
+   width: 40px;
+}
+
+.lente img {
+   width: 50%;
+}
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
+
+.jumbotron {
+   position: relative;
+   width: 100%;
+   height: 900px;
+   background-image: url(../img/jumbo-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+#logo-returnal {
+   width: 300px;
+}
+
+#logo-returnal img {
+   width: 100%;
+}
+
+.title-returnal {
+   font-size: 60px;
+}
+
+.slogan-returnal {
+   font-size: 20px;
+   min-width: 300px;
+}
+
+.interno-jumbotron {
+   position: absolute;
+   top: 50%;
+   left: 2%;
+   min-width: 40%;
+}
+
+.returnal {
+   margin-left: 30px;
+   margin: 20px 0px;
+}
+
+.ms-btn-m {
+   border-radius: 20px;
+}
+/* fine jumbotron */
+
+.giochi {
+   margin: 20px 0px;
+   position: relative;
+}
+
+.giochi img {
+   width: 60%;
+   border-radius: 20px;
+}
+
+.bordo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 58%;
+   height: 108px;
+   border-radius: 20px;
+   border: 2px solid rgb(29, 79, 218); 
+   display: none;
+}
+
+.giochi:hover .bordo {
+   display: block;
+}
 
 /* Fine Main */
 /* -------------------------------------------------- */
@@ -40,3 +125,5 @@
 /* -------------------------------------------------- */
 
 /* !DEBUG ZONE! */
+
+
