@@ -1,0 +1,42 @@
+*{
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+}
+/* -------------------------------------------------- */
+/* Inizio Common */
+
+/* Fine Common */
+/* -------------------------------------------------- */
+/* Inizio Header */
+
+.header-top{
+   height: 40px;
+}
+
+#logo-sony {
+   height: 100%;
+   width: 100px;
+   display: flex;
+   vertical-align: middle;
+}
+
+#logo-sony img {
+   width: 80%;
+}
+
+.ms-btn-sm {
+   border-radius: 20px;
+}
+/* Fine Header */
+/* -------------------------------------------------- */
+/* Inizio Main */
+
+/* Fine Main */
+/* -------------------------------------------------- */
+/* Inizio Footer */
+
+/* Fine Footer */
+/* -------------------------------------------------- */
+
+/* !DEBUG ZONE! */
