@@ -44,11 +44,31 @@ body {
 /* -------------------------------------------------- */
 /* Inizio Main */
 
-.jumbotron {
+.prova {
    position: relative;
    width: 100%;
    height: 900px;
    background-image: url(../img/jumbo-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.prova-uno {
+   position: relative;
+   width: 100%;
+   height: 900px;
+   background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.prova-due {
+   position: relative;
+   width: 100%;
+   height: 900px;
+   background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -61,8 +81,21 @@ body {
    height: 500px;
    max-width: 700px;
    padding: 50px;
+} 
+
+.interno-jumbotron-logo {
+   position: absolute;
+   top: 100%;
+   transform: translate(0, -100%);
+   height: 500px;
+   max-width: 700px;
+   padding: 50px;
+} 
+
+.interno-jumbotron-logo img {
+   height: 80px;
 }
- 
+
 .interno-jumbotron img {
    height: 40px;
    width: 200px;
@@ -239,13 +272,22 @@ footer {
 
 /* !DEBUG ZONE! */
 
-
 @media (min-width: 992px) {
 
    .special {
       display: flex;
       justify-content: space-between;
    } 
+
+
+   .ms_centrale {
+      text-align: center;
+   }
+
+   .ms_sub {
+      margin: 30px;
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -264,6 +306,18 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+   }
+
+   .box p {
+      display: none;
+   }
+
+   .ms_centrale {
+      align-items: center;
+   }
+
+   .ms_sub {
+      margin: 30px;
    }
 
 }
@@ -289,25 +343,104 @@ footer {
       font-size: 12px;
    }
 
+   .box p {
+      display: none;
+   }
+
+   .ms_centrale {
+      align-items: flex-start;
+   }
+   
 }
 
-.nav-item {
-   background-color: darkmagenta;
-   position: relative;
+/* Bonus */
+
+.dropdown-menu {
+   border-radius: 0px;
+   border: 1px solid white;
 }
 
-.ciao {
-   background-color: darkcyan;
-   position: absolute;
-   left: 0px;
-   width: 100%;
+.ms_megamenu {
+   display: inline-block;
+}
+
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu {
+   position:static!important;
+}
+  .navbar .megamenu {
+   left:0; right:0; width:100%; margin-top:0;
+}
+
+}	
+
+@media(max-width: 991px) {
+   .navbar.fixed-top
+   .navbar-collapse,
+   .navbar.sticky-top
+   .navbar-collapse {
+      overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+
+.animated {
+   animation-duration: 1.5s;
+   animation-fill-mode: both;
 }
 
 
-.collapse {
-   background-color: darkkhaki;
-}
+@keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translate3d(0, 100%, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ 
+ .fadeInUp {
+   animation-name: fadeInUp;
+   
+ }
 
-.navbar-collapse {
-   background-color: darkturquoise;
-}
+
+ @keyframes fadeInLeft {
+   from {
+     opacity: 0;
+     transform: translate3d(-100%, 0, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ 
+ .fadeInLeft {
+   animation-name: fadeInLeft;
+   animation-duration: 25s;
+
+ }
+
+ @keyframes fadeInRight {
+   from {
+     opacity: 0;
+     transform: translate3d(100%, 0, 0);
+   }
+ 
+   to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+   }
+ }
+ 
+ .fadeInRight {
+   animation-name: fadeInRight;
+   animation-duration: 25s;
+ }
